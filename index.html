@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hussy Jutt - Portfolio</title>
+    <meta name="description" content="Hussy Jutt - Full Stack Developer & Creative Problem Solver. Portfolio showcasing web development projects.">
+    <meta name="keywords" content="developer, portfolio, web development, javascript, react, nodejs">
+    <meta name="author" content="Hussy Jutt">
+    <title>Hussy Jutt - Full Stack Developer Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <!-- Navigation -->
@@ -17,6 +20,7 @@
                 <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="#skills" class="nav-link">Skills</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
             <div class="hamburger">
@@ -30,45 +34,58 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1>Hi, I'm Hussy Jutt</h1>
-            <p>Full Stack Developer & Creative Problem Solver</p>
-            <p class="hero-subtitle">Building amazing web experiences</p>
-            <button class="cta-btn" onclick="document.getElementById('projects').scrollIntoView({behavior: 'smooth'})">
-                View My Work
-            </button>
+            <h1 class="hero-title">Hi, I'm Hussy Jutt</h1>
+            <p class="hero-subtitle">Full Stack Developer & Creative Problem Solver</p>
+            <p class="hero-description">Crafting elegant digital solutions that transform ideas into reality</p>
+            <div class="hero-buttons">
+                <button class="cta-btn primary-btn" onclick="document.getElementById('projects').scrollIntoView({behavior: 'smooth'})">
+                    View My Work
+                </button>
+                <button class="cta-btn secondary-btn" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">
+                    Get in Touch
+                </button>
+            </div>
         </div>
         <div class="hero-animation">
             <div class="floating-box"></div>
+            <div class="floating-circle"></div>
         </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <h2>About Me</h2>
+            <div class="section-header">
+                <h2>About Me</h2>
+                <div class="header-line"></div>
+            </div>
             <div class="about-content">
                 <div class="about-text">
-                    <p>I'm a passionate developer with a love for creating elegant solutions to complex problems. With experience in web development, I focus on building responsive, user-friendly applications.</p>
-                    <p>When I'm not coding, you'll find me exploring new technologies, contributing to open source, or enjoying the outdoors.</p>
+                    <p>I'm a passionate full-stack developer with a proven track record of building scalable web applications. My journey in tech started with curiosity and has evolved into expertise across multiple modern technologies.</p>
+                    <p>I specialize in creating elegant solutions to complex problems, with a focus on user experience and clean code architecture. When I'm not coding, I contribute to open-source projects and stay updated with the latest industry trends.</p>
                     <div class="social-links">
-                        <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-                        <a href="mailto:your@email.com"><i class="fab fa-envelope"></i></a>
+                        <a href="https://github.com/hussy-jutt" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://twitter.com" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="mailto:hassnainshafique34@gmail.com" title="Email"><i class="fab fa-envelope"></i></a>
                     </div>
                 </div>
                 <div class="about-stats">
                     <div class="stat">
-                        <h3>5+</h3>
+                        <h3 class="stat-number">5+</h3>
                         <p>Years Experience</p>
                     </div>
                     <div class="stat">
-                        <h3>20+</h3>
+                        <h3 class="stat-number">50+</h3>
                         <p>Projects Completed</p>
                     </div>
                     <div class="stat">
-                        <h3>50+</h3>
+                        <h3 class="stat-number">100+</h3>
                         <p>Happy Clients</p>
+                    </div>
+                    <div class="stat">
+                        <h3 class="stat-number">30+</h3>
+                        <p>Technologies</p>
                     </div>
                 </div>
             </div>
@@ -78,37 +95,85 @@
     <!-- Skills Section -->
     <section id="skills" class="skills">
         <div class="container">
-            <h2>Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <i class="fab fa-js"></i>
-                    <h3>JavaScript</h3>
-                    <p>Expert in modern JS frameworks and ES6+</p>
+            <div class="section-header">
+                <h2>Technical Skills</h2>
+                <div class="header-line"></div>
+            </div>
+            <div class="skills-categories">
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <i class="fab fa-react"></i>
+                            <h4>React</h4>
+                            <p>Interactive UIs with Hooks & Context API</p>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-js"></i>
+                            <h4>JavaScript</h4>
+                            <p>Modern ES6+, async/await, promises</p>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-html5"></i>
+                            <h4>HTML & CSS</h4>
+                            <p>Semantic HTML & responsive design</p>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-css3"></i>
+                            <h4>Tailwind CSS</h4>
+                            <p>Utility-first CSS framework</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="skill-card">
-                    <i class="fab fa-react"></i>
-                    <h3>React</h3>
-                    <p>Building interactive UIs with React</p>
+                <div class="skill-category">
+                    <h3>Backend</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <i class="fab fa-node"></i>
+                            <h4>Node.js</h4>
+                            <p>Express, REST APIs, real-time apps</p>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-python"></i>
+                            <h4>Python</h4>
+                            <p>Django, Flask, data processing</p>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-database"></i>
+                            <h4>Databases</h4>
+                            <p>MongoDB, PostgreSQL, Firebase</p>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-docker"></i>
+                            <h4>Docker</h4>
+                            <p>Containerization & deployment</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="skill-card">
-                    <i class="fab fa-node"></i>
-                    <h3>Node.js</h3>
-                    <p>Backend development with Express and APIs</p>
-                </div>
-                <div class="skill-card">
-                    <i class="fab fa-html5"></i>
-                    <h3>HTML & CSS</h3>
-                    <p>Semantic HTML and responsive design</p>
-                </div>
-                <div class="skill-card">
-                    <i class="fab fa-python"></i>
-                    <h3>Python</h3>
-                    <p>Data processing and automation</p>
-                </div>
-                <div class="skill-card">
-                    <i class="fas fa-database"></i>
-                    <h3>Databases</h3>
-                    <p>MongoDB, PostgreSQL, Firebase</p>
+                <div class="skill-category">
+                    <h3>Tools & Platforms</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <i class="fab fa-git"></i>
+                            <h4>Git & GitHub</h4>
+                            <p>Version control & collaboration</p>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-linux"></i>
+                            <h4>Linux</h4>
+                            <p>Server management & shell scripting</p>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-cloud"></i>
+                            <h4>Cloud</h4>
+                            <p>AWS, Heroku, Vercel deployment</p>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-cogs"></i>
+                            <h4>DevOps</h4>
+                            <p>CI/CD pipelines, automation</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -117,42 +182,140 @@
     <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
-            <h2>Featured Projects</h2>
+            <div class="section-header">
+                <h2>Featured Projects</h2>
+                <div class="header-line"></div>
+            </div>
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
-                    <h3>E-Commerce Platform</h3>
-                    <p>Full-stack MERN application with payment integration and admin dashboard.</p>
-                    <div class="project-tags">
-                        <span>React</span>
-                        <span>Node.js</span>
-                        <span>MongoDB</span>
+                    <div class="project-content">
+                        <h3>E-Commerce Platform</h3>
+                        <p>Full-stack MERN with Stripe integration, real-time inventory, and admin dashboard.</p>
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                        <a href="#" class="project-link">View Project →</a>
                     </div>
-                    <a href="#" class="project-link">View Project →</a>
                 </div>
 
                 <div class="project-card">
                     <div class="project-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
-                    <h3>Task Management App</h3>
-                    <p>Collaborative task management tool with real-time updates using WebSockets.</p>
-                    <div class="project-tags">
-                        <span>React</span>
-                        <span>Firebase</span>
-                        <span>Tailwind</span>
+                    <div class="project-content">
+                        <h3>Task Management App</h3>
+                        <p>Collaborative tool with real-time updates, WebSockets, and progress tracking.</p>
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>Firebase</span>
+                            <span>Tailwind</span>
+                        </div>
+                        <a href="#" class="project-link">View Project →</a>
                     </div>
-                    <a href="#" class="project-link">View Project →</a>
                 </div>
 
                 <div class="project-card">
                     <div class="project-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
-                    <h3>Analytics Dashboard</h3>
-                    <p>Real-time data visualization dashboard with interactive charts and metrics.</p>
-                    <div class="project-tags">
-                        <span>Next.js</span>
-                        <span>Chart.js</span>
-                        <span>PostgreSQL</span>
+                    <div class="project-content">
+                        <h3>Analytics Dashboard</h3>
+                        <p>Real-time data visualization with interactive charts and custom filtering.</p>
+                        <div class="project-tags">
+                            <span>Next.js</span>
+                            <span>Chart.js</span>
+                            <span>PostgreSQL</span>
+                        </div>
+                        <a href="#" class="project-link">View Project →</a>
                     </div>
-                    <a href="#" class="project-link">View Project →</a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);"></div>
+                    <div class="project-content">
+                        <h3>Social Media Feed</h3>
+                        <p>Dynamic platform with infinite scroll, notifications, and recommendation algorithms.</p>
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>GraphQL</span>
+                            <span>AWS</span>
+                        </div>
+                        <a href="#" class="project-link">View Project →</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);"></div>
+                    <div class="project-content">
+                        <h3>Weather Application</h3>
+                        <p>Real-time weather forecasts with animations and location-based features.</p>
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>API</span>
+                            <span>Geolocation</span>
+                        </div>
+                        <a href="#" class="project-link">View Project →</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);"></div>
+                    <div class="project-content">
+                        <h3>AI Chat Bot</h3>
+                        <p>Intelligent chatbot with OpenAI integration and conversation history.</p>
+                        <div class="project-tags">
+                            <span>Next.js</span>
+                            <span>OpenAI</span>
+                            <span>Node.js</span>
+                        </div>
+                        <a href="#" class="project-link">View Project →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>Client Testimonials</h2>
+                <div class="header-line"></div>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">JS</div>
+                        <div class="testimonial-info">
+                            <h4>John Smith</h4>
+                            <p>CEO, Tech Startup</p>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"Hussy delivered our project on time and exceeded expectations. Exceptional code quality!"</p>
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">SJ</div>
+                        <div class="testimonial-info">
+                            <h4>Sarah Johnson</h4>
+                            <p>Product Manager, Design Agency</p>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"Working with Hussy was a game-changer. Expert in full-stack development!"</p>
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">MK</div>
+                        <div class="testimonial-info">
+                            <h4>Mike Khan</h4>
+                            <p>Founder, E-commerce Startup</p>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"True professional with excellent communication and problem-solving abilities!"</p>
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
                 </div>
             </div>
         </div>
@@ -161,34 +324,42 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2>Get In Touch</h2>
-            <p class="contact-subtitle">I'd love to hear from you. Let's create something amazing together!</p>
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <div class="header-line"></div>
+            </div>
+            <p class="contact-subtitle">Let's collaborate on something amazing!</p>
             
-            <form class="contact-form" id="contactForm">
-                <div class="form-group">
-                    <input type="text" placeholder="Your Name" required>
-                </div>
-                <div class="form-group">
-                    <input type="email" placeholder="Your Email" required>
-                </div>
-                <div class="form-group">
-                    <textarea placeholder="Your Message" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="submit-btn">Send Message</button>
-            </form>
+            <div class="contact-wrapper">
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
 
-            <div class="contact-info">
-                <div class="info-item">
-                    <i class="fas fa-envelope"></i>
-                    <p>your@email.com</p>
-                </div>
-                <div class="info-item">
-                    <i class="fas fa-phone"></i>
-                    <p>+1 (555) 123-4567</p>
-                </div>
-                <div class="info-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <p>Your City, Country</p>
+                <div class="contact-info">
+                    <div class="info-card">
+                        <i class="fas fa-envelope"></i>
+                        <h4>Email</h4>
+                        <p><a href="mailto:hassnainshafique34@gmail.com">hassnainshafique34@gmail.com</a></p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-phone"></i>
+                        <h4>Phone</h4>
+                        <p><a href="tel:+923001234567">+92 300 123 4567</a></p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4>Location</h4>
+                        <p>Pakistan</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -197,12 +368,19 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 Hussy Jutt. All rights reserved.</p>
-            <div class="footer-links">
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
+            <div class="footer-content">
+                <p>&copy; 2024 Hussy Jutt. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-socials">
+                    <a href="https://github.com/hussy-jutt" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
             </div>
         </div>
     </footer>
