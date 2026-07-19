@@ -1,0 +1,5 @@
+theme: null
+plugins:
+  - jekyll-feed
+markdown: kramdown
+encoding: UTF-8
